@@ -1,0 +1,47 @@
+body {
+  background-color: #111;
+  color: #9fcfe6;
+  padding: 20px;
+  font-size: 20px;
+}
+
+a {
+  color: #9fcfe6;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+
+h1:before {
+  content: "= ";
+}
+
+h1:after {
+  content: " =";
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: monospace;
+}
+
+@-webkit-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
+@-moz-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
+@-o-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
+@keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
+
+#cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #9fcfe6;
+
+  -webkit-animation: blink .5s linear 0s infinite alternate;
+  -moz-animation: blink .5s linear 0s infinite alternate;
+  -o-animation: blink .5s linear 0s infinite alternate;
+  animation: blink .5s linear 0s infinite alternate;
+}
