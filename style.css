@@ -1,17 +1,28 @@
 body {
-  background-color: #111;
-  color: #9fcfe6;
+  /* https://www.toptal.com/designers/subtlepatterns/ep-natural-black/ */
+  background: #141414 url("ep_naturalblack.png");
+  color: #11BDFF;
   padding: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1.4
 }
 
 a {
-  color: #9fcfe6;
+  color: #FF35DC;
+}
+
+p, h2 {
+  margin-bottom: 1.5em;
+}
+
+h1, h2 {
+  color: #05FC29;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: normal;
   margin-bottom: 2em;
 }
 
@@ -23,9 +34,18 @@ h1:after {
   content: " =";
 }
 
+h2:before {
+  content: "- ";
+}
+
+h2:after {
+  content: " -";
+}
+
+
 main {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   font-family: monospace;
 }
 
@@ -36,9 +56,10 @@ main {
 
 #cursor {
   display: inline-block;
-  width: 10px;
-  height: 20px;
-  background-color: #9fcfe6;
+  width: 14px;
+  height: 24px;
+  background-color: #11BDFF;
+  margin-bottom: -2px;
 
   -webkit-animation: blink .5s linear 0s infinite alternate;
   -moz-animation: blink .5s linear 0s infinite alternate;
