@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://peaceful-jepsen-fd2ccc.netlify.com/* https://rznc.xyz/:splat 301!
