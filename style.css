@@ -49,20 +49,4 @@ main {
   font-family: monospace;
 }
 
-@-webkit-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
-@-moz-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
-@-o-keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
 @keyframes blink { from { opacity: 0; } to { opacity: 100%; } }
-
-#cursor {
-  display: inline-block;
-  width: 14px;
-  height: 24px;
-  background-color: #11BDFF;
-  margin-bottom: -2px;
-
-  -webkit-animation: blink .5s linear 0s infinite alternate;
-  -moz-animation: blink .5s linear 0s infinite alternate;
-  -o-animation: blink .5s linear 0s infinite alternate;
-  animation: blink .5s linear 0s infinite alternate;
-}
